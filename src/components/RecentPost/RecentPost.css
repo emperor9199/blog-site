@@ -1,0 +1,89 @@
+.recent-post-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.title {
+  color: #394867;
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 2rem;
+}
+
+.recent-line {
+  margin: 0 1rem;
+}
+
+.recent-post-details > h3 {
+  /* margin-bottom: 1rem; */
+  font-size: 1.2rem;
+}
+
+.recent-post-details > p {
+  /* margin-bottom: 1rem; */
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.recent-post-img {
+  /* margin: 1rem 0; */
+  padding: 0 1rem 0 0;
+  height: 10rem;
+  width: 12rem;
+  /* object-fit: contain; */
+}
+
+.recent-main-container {
+  position: relative;
+}
+
+.share-icon {
+  position: absolute;
+  color: dodgerblue;
+  padding: 0.4rem 1rem;
+}
+
+.article-detail {
+  display: flex;
+  /* margin-bottom: 1rem; */
+}
+
+.article-detail p:nth-child(1) {
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  /* padding: 0.3rem 0.4rem; */
+  /* border: 1px solid dodgerblue; */
+  /* border-radius: 5px; */
+}
+
+.article-detail p:nth-child(2),
+.article-detail p:nth-child(3) {
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  /* padding: 0.3rem 0.4rem; */
+  color: gray;
+  /* border: 1px solid gray; */
+  /* border-radius: 5px; */
+}
+
+.article-catagory {
+  color: dodgerblue;
+  font-weight: 600;
+  cursor: pointer;
+  /* background-color: rgb(200, 225, 250); */
+}
+
+.article-icon {
+  margin: 0 0.4rem;
+}
+
+.recent-descripton {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1rem;
+  max-height: 2rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
