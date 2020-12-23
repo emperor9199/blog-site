@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Cover from "../Cover/Cover";
 import RecentPost from "../RecentPost/RecentPost";
 import PopularPost from "../PopularPost/PopularPost";
 import { Interests } from "../../constants/Interests";
 import "./Home.css";
+import { Posts } from "../../constants/Posts";
 
 const Home = () => {
-  const [news, setNews] = useState([]);
+  // const [news, setNews] = useState([]);
 
-  const fetchNews = async () => {
-    const data = await fetch(
-      "http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7784803310b640b8b86adc801b602028"
-    ).then((res) => res.json());
+  // const fetchNews = async () => {
+  //   const data = await fetch(
+  //     "http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7784803310b640b8b86adc801b602028"
+  //   ).then((res) => res.json());
 
-    setNews(data.articles);
-  };
+  //   setNews(data.articles);
+  // };
 
-  useEffect(() => {
-    fetchNews();
-  }, []);
+  // useEffect(() => {
+  //   fetchNews();
+  // }, []);
 
   return (
     <div className="base-area">
@@ -46,12 +47,12 @@ const Home = () => {
         </div>
         {/* </div> */}
         <div className="post-container `">
-          <RecentPost news={news} />
+          <RecentPost news={Posts} />
         </div>
         <div className="popular-container">
           <h3 className="popular-post-heading">Popular Posts</h3>
           <hr />
-          <PopularPost news={news} />
+          <PopularPost news={Posts} />
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ const Cover = () => {
   return (
     <div className="c-bg">
       <img src={bg} alt="stars" className="star" />
-      <p className="line">Learn Write Engage </p>
+      <p className="line">Write Engage Learn </p>
     </div>
   );
 };
