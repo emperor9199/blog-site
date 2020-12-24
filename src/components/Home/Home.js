@@ -5,22 +5,9 @@ import PopularPost from "../PopularPost/PopularPost";
 import { Interests } from "../../constants/Interests";
 import "./Home.css";
 import { Posts } from "../../constants/Posts";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-  // const [news, setNews] = useState([]);
-
-  // const fetchNews = async () => {
-  //   const data = await fetch(
-  //     "http://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7784803310b640b8b86adc801b602028"
-  //   ).then((res) => res.json());
-
-  //   setNews(data.articles);
-  // };
-
-  // useEffect(() => {
-  //   fetchNews();
-  // }, []);
-
   return (
     <div className="base-area">
       <div className="cover-area">
@@ -28,7 +15,6 @@ const Home = () => {
       </div>
 
       <div className="main-area">
-        {/* <div className="side-container"> */}
         <div className="interest-container">
           <h3 className="interest-catagory">Catagories</h3>
           <hr className="h-line" />
@@ -41,18 +27,23 @@ const Home = () => {
               );
             })}
           </div>
-          <a className="see-more-link" href="see">
+          <Link to="/all-blogs" className="see-more-link">
             See More...
-          </a>
+          </Link>
         </div>
-        {/* </div> */}
-        <div className="post-container `">
+        <div className="post-container">
           <RecentPost news={Posts} />
+          <Link to="/all-blogs" className="see-page-link bottom-link">
+            See All Blogs...
+          </Link>
         </div>
         <div className="popular-container">
           <h3 className="popular-post-heading">Popular Posts</h3>
           <hr />
           <PopularPost news={Posts} />
+          <Link to="/all-blogs" className="see-page-link bottom-link">
+            See All Blogs...
+          </Link>
         </div>
       </div>
     </div>

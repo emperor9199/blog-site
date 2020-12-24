@@ -1,5 +1,6 @@
 import React from "react";
 import "./RecentPost.css";
+import { Link } from "react-router-dom";
 
 const RecentPost = ({ news }) => {
   return (
@@ -19,21 +20,18 @@ const RecentPost = ({ news }) => {
             <div className="recent-post-details">
               <h3>{item.title}</h3>
               <div className="article-detail">
-                <p className="article-catagory">
-                  {/* <i className="far fa-bookmark article-icon"></i>Technology */}
-                  Technology
-                </p>
+                <p className="article-catagory">Technology</p>
                 <p>
-                  {/* <i className="far fa-clock article-icon"></i> Parth Maru */}
                   <li>Parth Maru</li>
                 </p>
                 <p>
-                  {/* <i className="far fa-user article-icon"></i> 1 Jan 2020 */}
                   <li>1 Jan 2020</li>
                 </p>
               </div>
               <p className="recent-descripton">{item.description}</p>
-              <a href="see">Read More...</a>
+              <Link to="/all-blogs" className="read-more">
+                Read More...
+              </Link>
               <i className="fas fa-share share-icon"></i>
             </div>
           </div>

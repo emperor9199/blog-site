@@ -8,27 +8,17 @@
 }
 
 .main-area {
-  /* position: absolute !important; */
   display: flex;
   flex-wrap: wrap !important;
   align-items: stretch;
-  /* background-image: linear-gradient(white, #f0f5f8); */
-  /* background-color: #e4e4e4; */
 }
 
 .post-container {
   z-index: 1000;
-  /* margin: 1rem; */
   margin-right: 3rem;
   flex: 2;
   background-color: white;
 }
-
-/* .side-container {
-  z-index: 1000;
-  margin-left: 3rem;
-  flex: 1;
-} */
 
 .h-line {
   margin: 0 1rem;
@@ -40,20 +30,14 @@
   margin: 0 3rem;
   flex: 1;
   align-self: flex-start;
-  /* margin: 1rem; */
-  /* padding: 1rem; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .interest-sub-container {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
   text-align: center;
   padding: 1rem;
 }
 
 .interest-sub-container p {
-  /* border: 1px solid lightgray; */
   margin: 0.5rem;
   padding: 0.5rem;
   font-weight: 500;
@@ -61,7 +45,6 @@
 }
 
 .interest-sub-container p:hover {
-  /* background-color: #394867; */
   color: #394867;
   font-size: 1.3rem;
   cursor: pointer;
@@ -72,7 +55,7 @@
 .interest-catagory {
   color: #394867;
   text-align: center;
-  padding: 0.9rem 0;
+  padding-top: 1.1rem;
   font-size: 1.5rem;
 }
 
@@ -83,11 +66,14 @@
   display: block;
 }
 
+.see-more-link:hover {
+  text-decoration: none;
+}
+
 .popular-container {
   background-color: #e4e4e4;
   margin: 3.2rem 0;
   padding: 1rem;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .popular-post-heading {
@@ -97,6 +83,15 @@
 
 .interest-link {
   font-size: 1rem;
+}
+
+.see-page-link:hover {
+  text-decoration: none;
+}
+
+.bottom-link {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 @media (max-width: 720px) {
@@ -122,22 +117,13 @@
     flex-direction: column;
   }
 
-  .search-box {
-    display: none;
-  }
-
   .popular-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .s-bar {
-    margin-top: 0.5rem;
-  }
-
   .write-blog {
     margin-top: 1rem;
-    width: fit-content;
   }
 }
 
@@ -162,10 +148,6 @@
   .popular-main-container {
     display: flex;
     flex-direction: column;
-  }
-
-  .search-box {
-    display: none;
   }
 
   .popular-main-container {

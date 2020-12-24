@@ -17,7 +17,16 @@ light:#f0f5f8;
 }
 
 .navbar-brand {
+  color: white !important;
   margin-left: 5rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
 }
 
 .toggle-area {
@@ -35,8 +44,6 @@ light:#f0f5f8;
 .nav-link-collection > li {
   margin: 0 2rem;
 }
-
-/* Extra */
 
 .s-bar {
   border: 1px solid white;
@@ -58,4 +65,8 @@ light:#f0f5f8;
   position: absolute;
   right: 1rem;
   top: 0.6rem;
+}
+
+.write-blog {
+  width: fit-content;
 }

@@ -24,7 +24,7 @@ const Navbar = () => {
             : "navbar navbar-expand-lg  nav-main fixed-top"
         }`}
       >
-        <Link className="navbar-brand link-color" to="/">
+        <Link className="navbar-brand" to="/">
           Blog-Site
         </Link>
 
@@ -43,19 +43,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarToggleContent">
           <ul className="navbar-nav mx-auto nav-link-collection">
             <li className="nav-item active">
-              <a className="nav-link link-color" href="/">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-color" href="/">
+              <Link to="/" className="nav-link">
                 All Blogs
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link link-color" href="/">
+              <Link to="/" className="nav-link">
                 Our Story
-              </a>
+              </Link>
             </li>
             <li>
               <div className="s-bar">

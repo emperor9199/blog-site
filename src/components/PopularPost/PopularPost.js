@@ -12,6 +12,15 @@ const PopularPost = ({ news }) => {
             </div>
             <div className="popular-post-details">
               <h4>{item.title}</h4>
+              <div className="popular-article-detail">
+                <p className="popular-article-catagory">Technology</p>
+                <p>
+                  <li>Parth Maru</li>
+                </p>
+                <p>
+                  <li>1 Jan 2020</li>
+                </p>
+              </div>
               <p className="popular-description">{item.description}</p>
               <a href="see">Read More...</a>
             </div>
